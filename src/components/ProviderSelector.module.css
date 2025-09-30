@@ -1,0 +1,24 @@
+.selectorContainer {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap; /* ✅ allows multiple rows */
+  gap: 10px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.buttons button {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #f3f4f6;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.buttons button:hover {
+  background: #e5e7eb;
+}

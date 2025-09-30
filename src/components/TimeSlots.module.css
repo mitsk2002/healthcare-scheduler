@@ -1,0 +1,25 @@
+.timeSlots {
+  text-align: center;
+}
+
+.slotGrid {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.timeSlot {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #f9fafb;
+  color: #111827;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.timeSlot:hover {
+  background: #e5e7eb;
+}

@@ -1,0 +1,74 @@
+/* Wrapper for the calendar */
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========== Core Calendar Styles ========== */
+
+/* Make all day tiles readable */
+.calendar :global(.react-calendar__tile) {
+  color: #111827 !important; /* dark gray */
+}
+
+/* Active date (clicked) */
+.calendar :global(.react-calendar__tile--active) {
+  background: #fde047 !important; /* yellow background */
+  color: #111827 !important;      /* dark text */
+  font-weight: bold;
+}
+
+/* Today's date */
+.calendar :global(.react-calendar__tile--now) {
+  background: #fff3cd !important; /* light yellow background */
+  color: #111827 !important;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+/* Navigation buttons (month/year) */
+.calendar :global(.react-calendar__navigation button) {
+  color: #111827 !important;
+  font-weight: 600;
+}
+
+/* Prev/Next buttons hover */
+.calendar :global(.react-calendar__navigation button:hover) {
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+/* Neighboring month days */
+.calendar :global(.react-calendar__month-view__days__day--neighboringMonth) {
+  color: #9ca3af !important; /* muted gray */
+}
+
+/* ========== Time Slots ========== */
+.timeSlots {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.timeSlots button {
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #111827;
+  transition: background 0.2s;
+}
+
+.timeSlots button:hover {
+  background: #e5e7eb;
+}
+
+.timeSlots button:disabled {
+  background: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
